@@ -1,0 +1,245 @@
+.ui-search {
+    background: url(./img/ui-search.jpg) center no-repeat;
+    font-size: 14px;
+    color: #ffffff;
+    z-index: 2;
+}
+
+.ui-search-selected {
+    height: 38px;
+    line-height: 38px;
+    width: 70px;
+    text-align: center;
+    padding-right: 10px;
+    box-sizing: border-box;
+    cursor: pointer;
+
+}
+
+.ui-search-input {
+    outline: none;
+    border: none;
+    position: absolute;
+    left: 75px;
+    top: 8px;
+    height: 22px;
+    width: 200px;
+    font-size: 14px;
+    color: #A5A2A2;
+}
+
+.ui-search-submit {
+    position: absolute;
+    left: 286px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    top: 0px;
+}
+
+.ui-search-select-list {
+    display: block;
+    width: 66px;
+    line-height: 20px;
+    /* background-color: red; */
+    background-color: white;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    left: 2px;
+    display: none;
+
+}
+
+.ui-search-select-list a {
+    font-size: 14px;
+    color: #666666;
+    float: left;
+    width: 66px;
+    text-align: center;
+    padding: 3px 0px;
+}
+
+.ui-search-select-list a:hover {
+    background-color: #dddddd;
+}
+
+.ui-menu {}
+
+.ui-menu-item {
+    height: 22px;
+    line-height: 22px;
+    padding: 8px 5px;
+}
+
+.ui-menu-item:hover {
+    background-color: #fff;
+}
+
+
+.ui-menu-item-department {
+    float: left;
+    height: 22px;
+    line-height: 22px;
+    padding-left: 20px;
+    color: white;
+}
+
+.ui-menu-item-disease {
+    float: right;
+    height: 22px;
+    line-height: 22px;
+    font-size: 12px;
+    margin-right: 10px;
+    color: #d7f3ff;
+}
+
+.ui-menu-item-detail {
+    display: none;
+}
+
+.ui-menu-item:hover .ui-menu-item-department {
+    color: #333333;
+}
+
+.ui-menu-item:hover .ui-menu-item-disease {
+    color: #868686;
+}
+
+.ui-menu-item:hover .ui-menu-item-detail {
+    display: block;
+    position: absolute;
+    left: 190px;
+    width: 552px;
+    height: 423px;
+    background-color: white;
+    top: 0;
+    padding: 30px;
+    box-sizing: border-box;
+    background: url(./img/bg-menu.jpg) no-repeat;
+    background-size: 100%;
+    z-index: 2;
+}
+
+.ui-menu-item-detail-group {
+    display: block;
+}
+
+.ui-menu-item-detail-group .ui-menu-item-detail-group-caption {
+    color: #333333;
+    text-align: left;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.ui-menu-item-detail-group-list {
+    overflow: hidden;
+}
+
+.ui-menu-item-detail-group-list a {
+    float: left;
+    margin-bottom: 20px;
+    margin-right: 10px;
+    font-size: 12px;
+    color: #666666;
+    padding-right: 10px;
+
+}
+
+.ui-menu-item-detail-group-list a::after {
+    content: "|";
+    color: #eeeeee;
+    padding-left: 8px;
+
+}
+
+.ui-backtop {
+    display: none;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    width: 44px;
+    height: 44px;
+    color: red;
+    text-align: center;
+    background: rgba(102, 102, 102,0.9) url(./img/icon-go-up.png) no-repeat;
+    background-size: 100%;
+    border: 1px solid #dddddd;
+}
+.ui-backtop:hover{
+    background: rgba(102, 102, 102,0.9);
+}
+.ui-backtop:hover::after{
+    content: "回到顶部";
+    color: white;
+    text-align: center;
+}
+.ui-slider{
+    width: 544px;
+    height: 414px;
+    position: relative;
+    overflow: hidden;
+}
+.ui-slider-wrap{
+    width: 1632px;
+    height: 414px;
+    position: absolute;
+    transition: all 0.5s;
+    z-index: 1;
+}
+.ui-slider-wrap a{
+    display: block;
+    width: 544px;
+    height: 414px;
+    float: left;
+    left: 0px;
+}
+.ui-slider-wrap img{
+    display: block;
+    
+}
+.ui-slider-arrow{
+    height: 40px;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    margin-top: -20px;
+    z-index: 1;
+}
+.ui-slider-arrow .item{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+.ui-slider-arrow .left{
+    float: left;
+    background: url(./img/ui-slider-arrow.png) no-repeat ;
+    
+}
+.ui-slider-arrow .right{
+    float: right;
+    background: url(./img/ui-slider-arrow.png) no-repeat ;
+    background-position: -40px 0px;
+}
+
+.ui-slider-process{
+    width: 100%;
+    height: 12px;
+    text-align: center;
+    position: absolute;
+    left: 0px;
+    bottom: 20px;
+    z-index: 1;
+}
+.ui-slider-process .item{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background: url(./img/ui-slider-process.png) no-repeat ;
+}
+.ui-slider-process .item.item_focus{
+    background-position: -23px 0px;
+}
+.ui-slider-process .item:hover{
+    background-position: -23px 0px;
+}
